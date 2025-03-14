@@ -1,0 +1,19 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}   
+
+.logo{
+    width: 75px;
+    height: 75px;
+    background-image: url("../../assets/Logo2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 75px;
+    box-shadow: 0 4px 12px rgba(46, 139, 86, 0.626);
+    border: 2px solid #2e8b57;
+}
