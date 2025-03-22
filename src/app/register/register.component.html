@@ -1,1 +1,78 @@
-<p>register works!</p>
+<div class="register">
+    <div class="info-section">
+        <div class="logo"></div>
+        <div class="info-content">
+            <h2>Join Our Healthcare Family</h2>
+            <p>Create an account to access personalized healthcare services and manage your medical needs efficiently.</p>
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-check"></i></div>
+                    <div class="benefit-text">Schedule appointments with top specialists</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-check"></i></div>
+                    <div class="benefit-text">Access your medical records anytime</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-check"></i></div>
+                    <div class="benefit-text">Receive timely health reminders</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-check"></i></div>
+                    <div class="benefit-text">Connect with healthcare professionals</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="register-container">
+        <h2>Create Your Account</h2>
+        <div class="register-form">
+            <form class="form-register">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="First Name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Last Name" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required />
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required />
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Confirm Password" required />
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required />
+                </div>
+                <div class="form-group">
+                    <select name="role" id="role" required>
+                        <option value="" disabled selected hidden>Select Role</option>
+                        <option value="patient">Patient</option>
+                        <option value="doctor">Doctor</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select name="gender" id="gender" required>
+                        <option value="" disabled selected hidden>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="date" placeholder="Date of Birth" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Address" required />
+                </div>
+                <button type="submit">Create Account</button>
+                <p class="login-link">Already have an account? <a href="/login">Login here</a></p>
+            </form>
+        </div>
+    </div>
+</div>

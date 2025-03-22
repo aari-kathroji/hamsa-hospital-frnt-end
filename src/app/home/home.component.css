@@ -1,26 +1,166 @@
-.home-container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    background-image: url("../../assets/Logo-1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
 }
-.login{
-    
-    width: 400px;
-    height: 400px;
-    margin: 20px;
-    display: flex;
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1000px;
+  height: 78vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafffe;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.08);
+  padding: 2rem;
+  overflow: hidden;
+  margin: auto;
+}
+
+.logo-section {
+  flex: 0 0 300px;
+  width: 300px;
+  height: 300px;
+  margin: 0 1rem 0 0;
+  background-image: url("../../assets/Logo2.jpeg");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 3px solid #2e8b57;
+  box-shadow: 0 5px 15px rgba(46, 139, 87, 0.2);
+  aspect-ratio: 1 / 1;
+}
+
+.content-section {
+  flex: 1;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: #2e8b57;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+}
+
+h3 {
+  color: #3aaf85;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+p {
+  color: #2c3e50;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.register-btn, .login-btn {
+  padding: 0.7rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.register-btn {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #2e8b57;
+  border: 2px solid #2e8b57;
+}
+
+.register-btn:hover {
+  background-color: #205e3b;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(46, 139, 87, 0.2);
+}
+
+.login-btn:hover {
+  background-color: rgba(46, 139, 87, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(46, 139, 87, 0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .home-content {
     flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: 95%;
+    padding: 1.5rem 1rem;
+  }
+
+  .logo-section {
+    margin: 0 0 1rem 0;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .content-section {
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .action-buttons {
+    gap: 1rem;
     justify-content: center;
-    align-items: center;
-    background:#a7ffcdb2;
-    border: 2px solid #2e8b57;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(46, 139, 86, 0.626);
+  }
+  
+  .register-btn, .login-btn {
+    padding: 0.6rem 1.4rem;
+  }
 }

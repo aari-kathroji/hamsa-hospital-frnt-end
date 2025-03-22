@@ -1,11 +1,25 @@
 <div class="login">
-    <div class="logo"></div>
-    <div>
-        <form>
-            <input type="email" placeholder="Email" /><br>
-            <input type="password" placeholder="Password" /><br>
-            <button type="submit">Login</button><br>
-            <p class="register-link">Don't have an account? <a href="/register">Create Account</a></p>
-        </form>
+    <div class="logo-section">
+        <div class="logo"></div>
+        <h1>Welcome to Hamsa Hospital</h1>
+        <p>Your Health, Our Priority</p>
+    </div>
+    
+    <div class="login-container">
+        <h2>Login to Your Account</h2>
+        <div class="login-form">
+            <form class="form-login">
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <select name="role" id="role">
+                    <option value="" disabled selected hidden>Select Role</option>
+                    <option value="patient">Patient</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <button type="submit">Login</button>
+                <p class="register-link">Don't have an account? <a href="/register">Create Account</a></p>
+            </form>
+        </div>
     </div>
 </div>
